@@ -1,6 +1,8 @@
 package model.services;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 import model.entities.Contract;
 import model.entities.Installment;
@@ -23,4 +25,5 @@ public class ContractService {
 		}
 		contract.viewInstallments();
 	}
+	
 }
