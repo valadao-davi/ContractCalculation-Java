@@ -31,6 +31,6 @@ public class Installment {
 	public String toString() {
 		return this.getDueDate() +
 				" - " +
-				this.getAmount();
+				this.getAmount() + "\n";
 	}
 }

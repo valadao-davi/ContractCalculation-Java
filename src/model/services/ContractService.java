@@ -20,7 +20,7 @@ public class ContractService {
 			double paymentInstallment = amountWithFee + paymentService.interest(amountWithFee);
 			LocalDate installmentDate = contract.getDate().plusMonths(i);
 			contract.addInstallment(new Installment(installmentDate, paymentInstallment));
-			
 		}
+		contract.viewInstallments();
 	}
 }

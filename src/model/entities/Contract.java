@@ -49,6 +49,12 @@ public class Contract {
 		return installments;
 	}
 	
+	public void viewInstallments() {
+		for(Installment installment : this.getInstallments()) {
+			System.out.print(installment);
+		}
+	}
+	
 	public void addInstallment( Installment installment) {
 		this.installments.add(installment);
 	}
